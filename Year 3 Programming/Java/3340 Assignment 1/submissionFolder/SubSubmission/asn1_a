@@ -1,0 +1,3 @@
+#!/bin/csh
+javac Question7a.java
+java Question7a

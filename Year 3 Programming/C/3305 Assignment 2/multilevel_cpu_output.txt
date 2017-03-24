@@ -1,0 +1,202 @@
+Starting program
+
+File opened
+
+Running Queue #1, with Queue ID 3 
+
+Order #1 - process with id 10, popped from stack 
+process has waited in total 0 time to run
+Process has finished execution. Process ran for 1 time 
+
+Order #2 - process with id 7, popped from stack 
+process has waited in total 1 time to run
+Process has finished execution. Process ran for 3 time 
+
+Order #3 - process with id 2, popped from stack 
+process has waited in total 4 time to run
+Process has finished execution. Process ran for 5 time 
+
+Order #4 - process with id 3, popped from stack 
+process has waited in total 9 time to run
+Process has finished execution. Process ran for 7 time 
+
+Order #5 - process with id 6, popped from stack 
+process has waited in total 16 time to run
+Process has finished execution. Process ran for 9 time 
+
+Order #6 - process with id 1, popped from stack 
+process has waited in total 25 time to run
+Process has finished execution. Process ran for 10 time 
+
+Order #7 - process with id 8, popped from stack 
+process has waited in total 35 time to run
+Process has finished execution. Process ran for 11 time 
+
+Order #8 - process with id 9, popped from stack 
+process has waited in total 46 time to run
+Process has finished execution. Process ran for 15 time 
+
+Order #9 - process with id 5, popped from stack 
+process has waited in total 61 time to run
+Process has finished execution. Process ran for 17 time 
+
+Order #10 - process with id 4, popped from stack 
+process has waited in total 78 time to run
+Process has finished execution. Process ran for 20 time 
+
+All processes completed in queue 
+Total Waiting Time for queue is 98, average waiting time is 9.800000 
+
+Running Queue #2, with Queue ID 1 
+
+Order #1 - process with id 1, popped from stack 
+process has waited in total 0 time to run
+Process has finished execution. Process ran for 10 time 
+
+Order #2 - process with id 2, popped from stack 
+process has waited in total 10 time to run
+Process has finished execution. Process ran for 5 time 
+
+Order #3 - process with id 3, popped from stack 
+process has waited in total 15 time to run
+Process has finished execution. Process ran for 7 time 
+
+Order #4 - process with id 4, popped from stack 
+process has waited in total 22 time to run
+Process has finished execution. Process ran for 20 time 
+
+Order #5 - process with id 5, popped from stack 
+process has waited in total 42 time to run
+Process has finished execution. Process ran for 17 time 
+
+Order #6 - process with id 6, popped from stack 
+process has waited in total 59 time to run
+Process has finished execution. Process ran for 9 time 
+
+Order #7 - process with id 7, popped from stack 
+process has waited in total 68 time to run
+Process has finished execution. Process ran for 3 time 
+
+Order #8 - process with id 8, popped from stack 
+process has waited in total 71 time to run
+Process has finished execution. Process ran for 11 time 
+
+Order #9 - process with id 9, popped from stack 
+process has waited in total 82 time to run
+Process has finished execution. Process ran for 15 time 
+
+Order #10 - process with id 10, popped from stack 
+process has waited in total 97 time to run
+Process has finished execution. Process ran for 1 time 
+
+All processes completed in queue 
+Total Waiting Time for queue is 98, average waiting time is 9.800000 
+
+Running Queue #3, with Queue ID 2 
+
+Order #1 - process with id 1, popped from stack 
+process has waited in total 0 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #2 - process with id 2, popped from stack 
+process has waited in total 5 time to run
+Process has finished execution. Process ran for 5 time 
+Turnover Time for process is: 10
+
+Order #3 - process with id 3, popped from stack 
+process has waited in total 10 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #4 - process with id 4, popped from stack 
+process has waited in total 15 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #5 - process with id 5, popped from stack 
+process has waited in total 20 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #6 - process with id 6, popped from stack 
+process has waited in total 25 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #7 - process with id 7, popped from stack 
+process has waited in total 30 time to run
+Process has finished execution. Process ran for 3 time 
+Turnover Time for process is: 33
+
+Order #8 - process with id 8, popped from stack 
+process has waited in total 33 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #9 - process with id 9, popped from stack 
+process has waited in total 38 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #10 - process with id 10, popped from stack 
+process has waited in total 43 time to run
+Process has finished execution. Process ran for 1 time 
+Turnover Time for process is: 44
+
+Order #11 - process with id 1, popped from stack 
+process has waited in total 44 time to run
+Process has finished execution. Process ran for 5 time 
+Turnover Time for process is: 49
+
+Order #12 - process with id 3, popped from stack 
+process has waited in total 49 time to run
+Process has finished execution. Process ran for 2 time 
+Turnover Time for process is: 51
+
+Order #13 - process with id 4, popped from stack 
+process has waited in total 51 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #14 - process with id 5, popped from stack 
+process has waited in total 56 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #15 - process with id 6, popped from stack 
+process has waited in total 61 time to run
+Process has finished execution. Process ran for 4 time 
+Turnover Time for process is: 65
+
+Order #16 - process with id 8, popped from stack 
+process has waited in total 65 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #17 - process with id 9, popped from stack 
+process has waited in total 70 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #18 - process with id 4, popped from stack 
+process has waited in total 75 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #19 - process with id 5, popped from stack 
+process has waited in total 80 time to run
+Process ran for 5 time and was re-enqueued 
+
+Order #20 - process with id 8, popped from stack 
+process has waited in total 85 time to run
+Process has finished execution. Process ran for 1 time 
+Turnover Time for process is: 86
+
+Order #21 - process with id 9, popped from stack 
+process has waited in total 86 time to run
+Process has finished execution. Process ran for 5 time 
+Turnover Time for process is: 91
+
+Order #22 - process with id 4, popped from stack 
+process has waited in total 91 time to run
+Process has finished execution. Process ran for 5 time 
+Turnover Time for process is: 96
+
+Order #23 - process with id 5, popped from stack 
+process has waited in total 96 time to run
+Process has finished execution. Process ran for 2 time 
+Turnover Time for process is: 98
+
+All processes completed in queue 
+Total Waiting Time for queue is 98, average waiting time is 4.260870 
+
+In total for all processes, the time taken is: 294 time

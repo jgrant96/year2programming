@@ -1,0 +1,83 @@
+#!/bin/sh
+
+#prompt user for number of columns
+echo "Enter number of columns for triangle to be printed"
+
+#will be true once we recieve valid input
+validInput=false
+
+#until the input is valid we keep asking for input
+until [ $validInput = "true" ]
+do
+
+#read from the user
+read numberOfColumns
+
+#in the cases the input is valid the validInput is flagged true
+
+    case $numberOfColumns in
+        **[a-zA-Z\!\@\#\$\%\&\*\(\)\-\_\+\=\\\/\|\'\:\]\[\}\{\?\.\<\>\,\`\]~*)
+            echo "You must enter a postive number, nothing else"
+            ;;
+[1-9]*)
+            validInput=true
+            ;;
+
+    *)
+            echo "you must enter a positive number, nothing else"
+            ;;
+
+    esac
+done
+
+#We will count up to the value given by the user
+countUp=0
+
+#If the size given by the user is 5, we will run this one from 0 to 4
+#It runs 5 times. The inner loop will also iterate many times
+#The first time through the loop it prints the 0, next it prints up to
+#countUp until countUp reaches the value specified
+while [ $countUp -lt $numberOfColumns ]
+do
+
+#We have another variable that counts up to the first value
+#Each time it does it will add values onto stringToPrint, and finally print
+
+        countUp2=0
+        stringToPrint=
+
+#The inside loop will count to the iteration we are on
+#We need to print all the values up to the iteration we are on
+#To do this we iterate to that value, and concatenate every
+#value that we pass
+#We print at the end
+        while [ $countUp2 -le $countUp ]
+        do
+
+                stringToPrint=$stringToPrint$countUp2" "
+                countUp2=`expr $countUp2 + 1`
+done
+
+#We are doing the same thing but the other way
+#We start at the largest value and count down.
+
+countDown=`expr $countUp - 1`
+
+#The same thing as above except we count down, and the triangle gets smaller
+while [ $countDown -ge 0 ]
+do
+        countUp2=0
+        stringToPrint=
+
+#We are iterating in the exact same way as before.
+
+        while [ $countUp2 -lt $countDown ]
+        do
+                stringToPrint=$stringToPrint$countUp2" "
+                countUp2=`expr $countUp2 + 1`
+        done
+
+        countDown=`expr $countDown - 1`
+echo $stringToPrint
+
+done

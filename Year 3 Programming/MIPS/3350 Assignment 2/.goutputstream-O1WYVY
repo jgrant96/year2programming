@@ -1,0 +1,124 @@
+		#Problem 3
+		#initialize the variables we'll use on the first run
+		addi $s0, $s0, 1
+		addi $s1, $s1, 3
+
+		#Get ready the arguments store them on the stack
+		add $sp, $sp, -4
+		sw $pc, 0($sp)
+		addi $sp, $sp, -4
+		sw $s0, 0($sp)
+		addi $sp, $sp, -4
+		sw $s1, 0($sp) 
+		j Acker:
+
+		EXIT
+
+Acker:		lw $t0, 0($sp) #Get the M argument from the stack
+		lw $t1, 4($sp) #Get the N argument from the stack
+	
+		add $t2, $t2, $0 #Get a register with zero in it and check m=0, n=0
+	
+		beq $t0, $t2, MEqualZero: #M = 0
+		beq $t1, $t2, NEqualZero: #N = 0
+		
+
+#ELSE
+		#N = N - 1
+		addi $t5, $t1, -1
+
+		#Set up the stack for another recursive call
+		add $sp, $sp, -4
+		sw $pc, 0($sp)
+		addi $sp, $sp, -4
+		sw $t0, 0($sp)
+		addi $sp, $sp, -4
+		sw $t5, 0($sp)
+
+		#Initiate the call
+		j Acker:
+
+		#Get the result
+		lw $t3, 0($sp)
+		addi $sp, $sp, 4
+
+		#M = M - 1
+		addi $t0, $t0, -1
+
+		#Set up the stack for another recursive call
+		add $sp, $sp, -4
+		sw $pc, 0($sp)
+		addi $sp, $sp, -4
+		sw $t0, 0($sp)
+		addi $sp, $sp, -4
+		sw $t3, 0($sp)
+
+		#Initiate the call
+		j Acker:
+
+		#Get the result
+		lw $t3, 0($sp)
+
+		addi $sp, $sp, 4
+
+		#Get the program counter
+		lw $t4, 0($sp)
+
+		#Store the return value
+		sw $t3, 0($sp)
+	
+		#return
+		add $pc, $t3, $0
+		
+
+	
+MEqualZero: 
+		#M equals zero so return
+		addi $t1, $t1, 1 #N = N+1
+
+		#Get rid of arguments on the stack
+		addi $sp, $sp, 8
+
+		#Get the return address
+		lw $t3, 0($sp)
+
+		#Add the result value to the stack
+		sw $t1, 0($sp)
+
+		#return
+		add $pc, $t3, $0
+
+
+NEqualZero:
+		#M = M - 1
+		addi $t0, $t0, -1
+
+		#Set up the stack for another recursive call
+		add $sp, $sp, -4
+		sw $pc, 0($sp)
+		addi $sp, $sp, -4
+		sw $t0, 0($sp)
+		addi $sp, $sp, -4
+		sw $t1, 0($sp)
+
+		#Initiate the call
+		j Acker:
+
+		#Get the result
+		lw $t3, 0($sp)
+
+		addi $sp, $sp, 4
+
+		#Get the program counter
+		lw $t4, 0($sp)
+
+		#Store the return value
+		sw $t3, 0($sp)
+	
+		#return
+		add $pc, $t3, $0
+
+		
+	
+	
+

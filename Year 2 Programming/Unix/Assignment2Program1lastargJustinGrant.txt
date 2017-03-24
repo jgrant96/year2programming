@@ -1,0 +1,16 @@
+#!/bin/sh
+# lastarg - reprints the last argument given
+
+#if there are arguments that can be printed the program continues
+if [ $# -gt 0 ]
+then
+
+#We cycle through all of the arguments and discard them until we reach the last
+    while [ $# -gt 1 ]
+    do
+        shift
+    done
+
+#We print the last argument
+    echo $1
+fi

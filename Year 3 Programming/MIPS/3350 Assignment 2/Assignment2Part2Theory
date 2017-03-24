@@ -1,0 +1,100 @@
+Main Program
+
+Create array B
+Create array A
+create size n
+
+Push base address of B on the stack
+Push base address of A on the stack
+push n on the stack
+call mergesort + link
+
+
+MergeSort
+push return address onto stack
+t0 get base address B
+t1 get base address A
+t2 get n
+
+beq t2 == 0 To Equal:
+If they aren't equal then
+
+Create an array C
+put base address on stack
+
+Push base address of C on the stack
+Push base address of A on teh stack
+t3 == n/2
+push n/2 on to the stack
+call mergesort + link
+
+get base address of A and C
+get n
+get n/2
+Address of A + n/2
+Address of C + n/2
+n - n/2
+
+push C+n/2 on to the stack
+push A+n/2 on to the stack
+push n - n/2 on to the stack
+
+call mergeSort
+
+get base addresses of B and C
+get n
+
+get n2
+get C + n/2
+get n-n/2
+
+push address of B onto the stack
+push address of C onto the stack
+push address of C+n/2 on to the stack
+push n/2 on to the stack
+push n-n/2 on to the stack.
+
+
+
+MERGE
+
+Start of loop
+
+Compare na to 0
+Branch to second if greater
+Compare nb to 0
+branch to second if greater
+
+compare A to B
+if less branch to less
+if more branch to more
+
+Less:
+Put A inside of C
+increase pointer of C
+increase pointer of A
+decrease na
+back to loop
+
+More:
+Put B insideo of C
+increase pointer of C
+increase pointer of B
+decrease nb
+back to loop
+
+start of loop 2
+branch if na <= 0
+put A inside C
+increase pointer for C
+increase pointer for A
+decrease na
+back to loop
+
+start of loop 4
+branch if nb<= 0
+put B inside C
+increases pointer for C
+increase pointer for B
+decrease nb
+back to loop

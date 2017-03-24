@@ -1,0 +1,3 @@
+#!/bin/csh
+javac BinaryImageReader.java uandf.java
+java BinaryImageReader $1

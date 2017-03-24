@@ -1,0 +1,4 @@
+#!/bin/csh
+javac Question7b.java LargeInteger.java
+java Question7b
+

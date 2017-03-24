@@ -1,0 +1,23 @@
+#!/bin/sh
+# odd_prn - Prints the shell script's file name as well as any odd-numbered
+# arguments
+
+#prints the name of the file
+echo $0
+
+#We cycle through all the program arguments until there are no more to check
+while [ $# -ge 1 ]
+do
+
+#We print an argument. We're only printing the odd ones
+                echo $1
+
+#We shift discard the argument. We will discard that one if it exists, so we
+#are two argument places ahead. An odd placement
+                shift
+
+                if [ $# -gt 0 ]
+                then
+                        shift
+                fi
+done
